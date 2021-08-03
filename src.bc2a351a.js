@@ -81,4 +81,4 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{"./refs":"VyiV","./getphotoes":"THWJ","./create-results":"ityr"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=s(require("./js/search"));require("./js/getphotoes");var r=s(require("./js/refs"));function s(e){return e&&e.__esModule?e:{default:e}}r.default.searchBtn.addEventListener("click",e.default);
 },{"./sass/main.scss":"clu1","./js/search":"HU2o","./js/getphotoes":"THWJ","./js/refs":"VyiV"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.bc2a351a.js.map
+//# sourceMappingURL=/goit-js-hw-13/src.bc2a351a.js.map
