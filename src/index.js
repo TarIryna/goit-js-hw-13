@@ -13,9 +13,13 @@ refs.moreBtn.addEventListener('click', onMoreBtn);
 
     function onSearchBtn(e) {
     e.preventDefault()
-    if (refs.input.value.trim()) {
-        PAS.query = refs.input.value.trim();
-        PAS.getPhotoes(PAS.query);
+        if (refs.input.value.trim()) {
+            if (PAS.query !== refs.input.value.trim()) {
+                PAS.page = 1;
+                PAS.per_page = 20;
+                PAS.query = refs.input.value.trim();
+                PAS.getPhotoes(PAS.query);
+            }
     }
     return;
 }

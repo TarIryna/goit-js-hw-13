@@ -4,8 +4,8 @@ import renderPhotoes from './renderPhotoes';
 
 export default class PhotoApiService {
     constructor() {
-            this.query = '';
-            this.page = 1;
+        this.query = '';
+        this.per_page = 20;
              }
     
    async getPhotoes() {
@@ -15,13 +15,13 @@ export default class PhotoApiService {
             image_type: 'photo',
             orientation: 'horizontal',
             safesearch: true,
-            page: this.page,
+            per_page: this.per_page,
         };
     
-            const URL = 'https://pixabay.com/api/';
+       const URL = 'https://pixabay.com/api/';
        const responce = await axios.get(URL, { params }).then(responce => responce.data);
-       renderPhotoes(responce.hits);
-       this.page += 1;
+       renderPhotoes(responce.hits, responce.totalHits, this.per_page);
+       this.per_page += 20;
        
          }
     
