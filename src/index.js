@@ -16,7 +16,7 @@ refs.moreBtn.addEventListener('click', onMoreBtn);
         if (refs.input.value.trim()) {
             if (PAS.query !== refs.input.value.trim()) {
                 PAS.page = 1;
-                PAS.per_page = 20;
+                PAS.per_page = 40;
                 PAS.query = refs.input.value.trim();
                 PAS.getPhotoes(PAS.query);
             }

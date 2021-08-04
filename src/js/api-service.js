@@ -5,7 +5,7 @@ import renderPhotoes from './renderPhotoes';
 export default class PhotoApiService {
     constructor() {
         this.query = '';
-        this.per_page = 20;
+        this.per_page = 40;
              }
     
    async getPhotoes() {

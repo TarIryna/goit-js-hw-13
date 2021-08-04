@@ -7,14 +7,14 @@ function renderPhotoes(photoes, total, shown) {
     if (shown >= total) {
         Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
     }
-    else if (shown === 20) {
+    else if (shown === 40) {
         Notiflix.Notify.success(`Hooray! We found ${total} images!`);
         const html = imageCard(photoes);
         console.log(refs.gallery);
         refs.gallery.innerHTML = html;
         refs.moreBtn.classList.add('visible');
      }
-   else if (shown > 20 && shown < total) {
+   else if (shown > 40 && shown < total) {
         const html = imageCard(photoes);
         console.log(refs.gallery);
         refs.gallery.innerHTML = html;

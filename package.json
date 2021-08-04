@@ -30,6 +30,7 @@
     "axios": "^0.21.1",
     "handlebars": "^4.7.7",
     "json-server": "^0.16.3",
-    "notiflix": "^3.0.1"
+    "notiflix": "^3.0.1",
+    "simplelightbox": "^2.8.0"
   }
 }
