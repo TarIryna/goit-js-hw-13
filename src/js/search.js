@@ -1,15 +1,18 @@
-import refs from './refs';
-import getPhotoes from './getphotoes';
-import createResults from './create-results';
+// import refs from './refs';
+
+// import PhotoApiService from './api-service';
+
+// const PAS = new PhotoApiService();
+
+// function onSearchBtn(e) {
+//     e.preventDefault();
+//         PAS.query = e.currentTarget.elements.query.value;
+//         PAS.getPhotoes();
+// }
+
+// function onMoreBtn(e) {
+//    PAS.getPhotoes();
+// }
 
 
-
-function onSearchBtn(e) {
-    e.preventDefault()
-    if (refs.input.value.trim()) {
-        refs.query = refs.input.value.trim();
-        getPhotoes(refs.query);
-    }
-    return;
-}
-export default onSearchBtn;
+// export default { onSearchBtn, onMoreBtn };

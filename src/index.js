@@ -1,6 +1,26 @@
 import './sass/main.scss';
-import onSearchBtn from './js/search';
-import './js/getphotoes';
+import PhotoApiService from './js/api-service';
 import refs from './js/refs';
+// import LigthboxService from './js/lightbox';
+
+const PAS = new PhotoApiService();
+
+
 
 refs.searchBtn.addEventListener('click', onSearchBtn);
+refs.moreBtn.addEventListener('click', onMoreBtn);
+// refs.gallery.addEventListener('click', LigthboxService.onImageListClick);
+
+    function onSearchBtn(e) {
+    e.preventDefault()
+    if (refs.input.value.trim()) {
+        PAS.query = refs.input.value.trim();
+        PAS.getPhotoes(PAS.query);
+    }
+    return;
+}
+   
+
+function onMoreBtn(e) {
+   PAS.getPhotoes();
+}
