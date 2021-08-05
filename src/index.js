@@ -1,7 +1,6 @@
 import './sass/main.scss';
 import PhotoApiService from './js/api-service';
 import refs from './js/refs';
-// import LigthboxService from './js/lightbox';
 
 const PAS = new PhotoApiService();
 
