@@ -16,12 +16,14 @@
   flex-basis: calc((100% - 5 * 15px) / 5);
 }
 .search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: blue;
   padding: 15px;
   border-radius: 5px;
 }
 .input-form {
-  margin-left: 250px;
   border-radius: 5px;
 }
 .load-more {
@@ -62,4 +64,8 @@ span {
   align-items: center;
   margin: 0;
   font-size: 13px;
+}
+
+.form-button {
+  margin-left: 15px;
 }
